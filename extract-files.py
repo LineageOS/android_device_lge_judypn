@@ -26,7 +26,11 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/liblgsnpeawb.so',
         'vendor/lib/libSNPE.so'
     ): blob_fixup()
-        .replace_needed('libstdc++.so', 'libstdc++_vendor.so')
+        .replace_needed('libstdc++.so', 'libstdc++_vendor.so'),
+    'vendor/lib/libmmcamera_faceproc.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
 }  # fmt: skip
 
 

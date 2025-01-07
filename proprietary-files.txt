@@ -4,7 +4,7 @@
 # Current blobs with ELF checks disabled:
 #
 # The following depend on compiler intrinsic symbols that are not exported:
-# com.lge.node.{elpis,elvis,lavis}, com.qti.node.memcpy, liblgae_main, libmmcamera_faceproc
+# com.lge.node.{elpis,elvis,lavis}, com.qti.node.memcpy, liblgae_main
 
 # ADSP
 vendor/bin/chre
@@ -106,12 +106,12 @@ vendor/lib/libfilm_emulation.so
 vendor/lib/libfilm_emulation_symphony.so
 vendor/lib/liblgdnn.so
 vendor/lib/liblghdri.so
-vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
+vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmorpho_image_stab31.so
 vendor/lib/libmorpho_superzoom.so
 vendor/lib/libmpbase.so
-vendor/lib64/libmmcamera_faceproc.so;DISABLE_CHECKELF
+vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/libmmcamera_faceproc2.so
 
 # Camera - patched to fix buffer issue
