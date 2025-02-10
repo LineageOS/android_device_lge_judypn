@@ -26,9 +26,6 @@ TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn androidboot.fstab_suffix=judypn
 TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
 
-# Lights
-$(call soong_config_set,LGE_LIGHTS_HAL,INCLUDE_DIR,$(DEVICE_PATH)/include)
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
