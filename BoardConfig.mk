@@ -19,9 +19,6 @@ DEVICE_PATH := device/lge/judypn
 # Inherit from common device tree
 include device/lge/sdm845-common/BoardConfigJudy.mk
 
-# Camera
-TARGET_USES_YCRCB_VENUS_CAMERA_PREVIEW := true
-
 # Kernel
 BOARD_KERNEL_CMDLINE += androidboot.hardware=judypn androidboot.fstab_suffix=judypn
 TARGET_KERNEL_CONFIG := lineageos_judypn_defconfig
