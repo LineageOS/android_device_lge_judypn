@@ -16,10 +16,10 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+DEVICE_NAME := judypn
+
 # Include from common device configuration
 $(call inherit-product, device/lge/sdm845-common/sdm845.mk)
-
-DEVICE_NAME := judypn
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
