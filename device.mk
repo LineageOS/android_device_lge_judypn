@@ -50,6 +50,9 @@ PRODUCT_COPY_FILES += \
     device/lge/sdm845-common/rootdir/etc/fstab.judy:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.judypn \
     device/lge/sdm845-common/rootdir/etc/fstab.judy:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.judypn
 
+# LiveDisplay
+$(call soong_config_set,livedisplay_lge,enable_se,true)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service \
